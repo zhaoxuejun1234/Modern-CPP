@@ -5,7 +5,9 @@
 //通过c++多态实现函数功能封装，外部只能调用父类暴露的接口，无法对子类方法进行访问
 #include <iostream>
 #include <memory>
+
 using namespace std;
+//region multi-state abstract class
 class Infer
 {
 public:
@@ -28,8 +30,28 @@ shared_ptr<Infer> Test_func()
     shared_ptr<InferImp> p1(new InferImp());
     return p1;
 }
+//endregion
+class Desk
+{
+public:
+    virtual void print(){}
+
+};
+class Desk2:public Desk
+{
+public:
+    void print(){cout<<"Desk2 print"<<endl;}
+    void get(){cout<<"Call get fun"<<endl;}
+
+};
 int main()
 {
-    auto p = Test_func();
-    p->forward();
+    Desk* p2 = new Desk;
+    p2 = new Desk2;
+    p2->print();
+//    auto p = Test_func();
+//    p->forward();
+
+
+
 }
