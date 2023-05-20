@@ -46,6 +46,9 @@ public:
         }
     }
 private:
+//    TaskQueue()=default;
+//    TaskQueue& operator=(const TaskQueue&)=default;
+//    static TaskQueue Task;
     queue<int> Tasks;
     mutex mtx;
     condition_variable cv1;
@@ -53,7 +56,7 @@ private:
     int count =0;
     promise<int> pro;
 };
-
+//TaskQueue TaskQueue::Task;
 
 
 int main()
