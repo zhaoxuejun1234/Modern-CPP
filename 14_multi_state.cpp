@@ -1,7 +1,7 @@
 //
 // Created by xuejun on 23-5-20.
 //
-//子类指针指向父类
+//父类指针指向子类
 //通过c++多态实现函数功能封装，外部只能调用父类暴露的接口，无法对子类方法进行访问
 #include <iostream>
 #include <memory>
