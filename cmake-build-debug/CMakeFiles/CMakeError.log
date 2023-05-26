@@ -1,11 +1,11 @@
 Performing C SOURCE FILE Test CMAKE_HAVE_LIBC_PTHREAD failed with the following output:
-Change Dir: /home/xuejun/C++Projects/Features/Features_1/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-MQyoWj
+Change Dir: /home/xuejun/C++Projects/Features/Features_1/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-pTiAJq
 
-Run Build Command(s):/home/xuejun/.cache/JetBrains/RemoteDev/dist/3c8ecd31118eb_CLion-2023.1.1/bin/ninja/linux/x64/ninja cmTC_44351 && [1/2] Building C object CMakeFiles/cmTC_44351.dir/src.c.o
-[2/2] Linking C executable cmTC_44351
-FAILED: cmTC_44351 
-: && /usr/bin/cc   CMakeFiles/cmTC_44351.dir/src.c.o -o cmTC_44351   && :
-CMakeFiles/cmTC_44351.dir/src.c.o：在函数‘main’中：
+Run Build Command(s):/home/xuejun/下载/clion-2023.1.1/bin/ninja/linux/x64/ninja cmTC_a8bc7 && [1/2] Building C object CMakeFiles/cmTC_a8bc7.dir/src.c.o
+[2/2] Linking C executable cmTC_a8bc7
+FAILED: cmTC_a8bc7 
+: && /usr/bin/cc   CMakeFiles/cmTC_a8bc7.dir/src.c.o -o cmTC_a8bc7   && :
+CMakeFiles/cmTC_a8bc7.dir/src.c.o：在函数‘main’中：
 src.c:(.text+0x3e)：对‘pthread_create’未定义的引用
 src.c:(.text+0x4a)：对‘pthread_detach’未定义的引用
 src.c:(.text+0x56)：对‘pthread_cancel’未定义的引用
@@ -38,12 +38,12 @@ int main(void)
 
 
 Determining if the function pthread_create exists in the pthreads failed with the following output:
-Change Dir: /home/xuejun/C++Projects/Features/Features_1/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-79ru1a
+Change Dir: /home/xuejun/C++Projects/Features/Features_1/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-9R9Nn7
 
-Run Build Command(s):/home/xuejun/.cache/JetBrains/RemoteDev/dist/3c8ecd31118eb_CLion-2023.1.1/bin/ninja/linux/x64/ninja cmTC_6891d && [1/2] Building C object CMakeFiles/cmTC_6891d.dir/CheckFunctionExists.c.o
-[2/2] Linking C executable cmTC_6891d
-FAILED: cmTC_6891d 
-: && /usr/bin/cc -DCHECK_FUNCTION_EXISTS=pthread_create  CMakeFiles/cmTC_6891d.dir/CheckFunctionExists.c.o -o cmTC_6891d  -lpthreads && :
+Run Build Command(s):/home/xuejun/下载/clion-2023.1.1/bin/ninja/linux/x64/ninja cmTC_37126 && [1/2] Building C object CMakeFiles/cmTC_37126.dir/CheckFunctionExists.c.o
+[2/2] Linking C executable cmTC_37126
+FAILED: cmTC_37126 
+: && /usr/bin/cc -DCHECK_FUNCTION_EXISTS=pthread_create  CMakeFiles/cmTC_37126.dir/CheckFunctionExists.c.o -o cmTC_37126  -lpthreads && :
 /usr/bin/ld: 找不到 -lpthreads
 collect2: error: ld returned 1 exit status
 ninja: build stopped: subcommand failed.
