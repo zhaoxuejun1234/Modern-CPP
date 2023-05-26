@@ -26,7 +26,7 @@ void WriteJson()
     Value dict3;
     dict3["Magic"]= "Multi-Person";
     dict3["Body"]= "Bullet-proof";
-    dict3["Field"] = dict2;
+    dict3["Field"] = dict2; //字典的嵌套
     root.append(dict1);
     root.append(dict3);
     string str = root.toStyledString();
