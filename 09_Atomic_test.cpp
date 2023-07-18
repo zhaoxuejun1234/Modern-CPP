@@ -56,7 +56,7 @@ public:
         cout<<"value is "<<num<<endl;
     }
 private:
-    atomic_int num;
+    atomic_int num; //原子变量禁用拷贝构造函数进行初始化，使用初始化列表或者初始化后进行赋值
 //    int num = 0;   //普通int类型不是线程安全的
 
 };
